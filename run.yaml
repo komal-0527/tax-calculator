@@ -5,11 +5,9 @@ metadata:
 spec:
   pipelineRef:
     name: tax-calculator-pipeline
-
   params:
     - name: image
       value: us.icr.io/komal-tax/tax-calculator:latest
-
   workspaces:
     - name: shared-workspace
       emptyDir: {}
