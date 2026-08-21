@@ -16,6 +16,5 @@ function calculate() {
 
     const tax = calculateTax(income);
 
-    result.innerText =
-        "Calculated Tax: $" + tax.toFixed(2);
+    result.innerText = "$" + tax.toFixed(2);
 }

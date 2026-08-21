@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tax Calculator</title>
+    <title>tax-calculator</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="container">
 
-        <h1>Tax Calculator</h1>
+        <h1>tax-calculator</h1>
 
-        <label for="income">
-            Enter Annual Income:
-        </label>
+        <div class="field">
+            <label for="income">Your Total Income</label>
 
-        <input
-            type="number"
-            id="income"
-            placeholder="Enter income"
-            min="0"
-        >
+            <input
+                type="number"
+                id="income"
+                placeholder="Enter your total income"
+                min="0"
+            >
+        </div>
 
         <button onclick="calculate()">
             Calculate Tax
         </button>
 
-        <div id="result"></div>
+        <div class="result">
+            <h2>Tax Due</h2>
+            <p id="result">.00</p>
+        </div>
 
     </div>
 
     <script src="taxCalculator.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
